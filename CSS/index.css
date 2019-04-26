@@ -29,7 +29,7 @@
   src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
 }
 header {
-  background-image: url('assets\header-img.jpg');
+  background-image: url(header-img.jpg);
 }
 header .nav-bar {
   display: flex;
