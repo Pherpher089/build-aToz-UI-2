@@ -160,13 +160,15 @@ footer{
     .dims(100vw, 13rem);
 
     .nav-bar{
+
         .dims(100%, 10rem);
-        
         .flex(space-between, center, row);
+
         nav{
             .flex(space-around, center, row);
             text-decoration: none;
             font-size: 2rem;
+
             a{
                 margin-left: @navBar-Margin;
                 margin-right: 1rem;
@@ -180,14 +182,44 @@ footer{
 }
 
 .aboutUs-content{
+    
     background-color: darkgreen;
     margin-top: 3rem;
 
     .bio{
         background-color: green;
-        .dims(90vw, 20rem);
+        .dims(90vw, 25rem);
         .margins(3re, 3rem, 7rem, 5rem);
-    }
+        .flex(space-around, center, row);
+
+        .profile{
+            background-color: limegreen;
+
+            h1{
+                font-size: 2rem;
+                text-align: center;
+                margin-top:1rem;
+            }
+        }
+
+        .profile-content{
+            .dims(90rem, 17.5rem);
+            background-color: yellowgreen;
+            h1{
+                font-size: 3rem;
+                font-weight: bold;
+                text-align: center;
+                margin-top:1rem;        
+            }          
+
+            p{
+                font-size: 2rem;
+            }
+        }
+    }  
     
+    .revers{
+        flex-direction: row-reverse;
+    }
 }
 

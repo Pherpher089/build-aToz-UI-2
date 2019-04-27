@@ -304,9 +304,38 @@ footer .copyright {
 .aboutUs-content .bio {
   background-color: green;
   width: 90vw;
-  height: 20rem;
+  height: 25rem;
   margin-top: 3re;
   margin-bottom: 3rem;
   margin-left: 7rem;
   margin-right: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.aboutUs-content .bio .profile {
+  background-color: limegreen;
+}
+.aboutUs-content .bio .profile h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.aboutUs-content .bio .profile-content {
+  width: 90rem;
+  height: 17.5rem;
+  background-color: yellowgreen;
+}
+.aboutUs-content .bio .profile-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+.aboutUs-content .bio .profile-content p {
+  font-size: 2rem;
+}
+.aboutUs-content .revers {
+  flex-direction: row-reverse;
 }
