@@ -100,20 +100,63 @@ html{
 .about{
 
     background-color: darkGrey;
-    .dims(75vw, 50rem);
+    .dims(75vw, 65rem);
     .margins();
+
+    img{
+        width: 75vw;
+    }
+    h1{
+        .margins(2rem, 2rem, 3rem, 1rem);
+        font-size: 3rem;
+    }
+    p{
+        .margins(3rem, 3rem, 0rem,0rem);
+        font-size: 2rem
+    }
 }
 
 .experiences{
 
     background-color: skyBlue;
-    .dims(75vw, 70rem);
+    .dims(75vw, 40rem);
     .margins();
+    .flex(space-around, center, row);
+
+    .experience{
+        background-color: white;
+       
+        .dims(25em, 35rem);
+        h1{
+            margin-left: 1rem;
+            font-size: 2rem;
+        }
+        .img-placeHolder{
+            background-color: pink;
+            .dims(20rem, 15rem);
+            .margins(1rem, 1rem, 2rem, 2rem);
+        }
+        h3{
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+        p{
+            background-color: lightgrey;
+            font-size: 1.3rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        button{
+            .margins(3rem, 2rem, 6rem, 0rem);
+        }
+    }
 }
 
 footer{
     background-color: red;
-    .dims(100vw, 30rem);
+    .dims(100vw, 35rem);
     .margins(5rem, 0rem, 0px, 0px);
    
     .footer-content{

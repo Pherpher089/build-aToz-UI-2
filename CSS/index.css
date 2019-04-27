@@ -203,25 +203,81 @@ html {
 .about {
   background-color: darkGrey;
   width: 75vw;
-  height: 50rem;
+  height: 65rem;
   margin-top: 5rem;
   margin-bottom: 0;
   margin-left: 18rem;
   margin-right: 18rem;
+}
+.about img {
+  width: 75vw;
+}
+.about h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  margin-right: 1rem;
+  font-size: 3rem;
+}
+.about p {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  font-size: 2rem;
 }
 .experiences {
   background-color: skyBlue;
   width: 75vw;
-  height: 70rem;
+  height: 40rem;
   margin-top: 5rem;
   margin-bottom: 0;
   margin-left: 18rem;
   margin-right: 18rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.experiences .experience {
+  background-color: white;
+  width: 25em;
+  height: 35rem;
+}
+.experiences .experience h1 {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+.experiences .experience .img-placeHolder {
+  background-color: pink;
+  width: 20rem;
+  height: 15rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.experiences .experience h3 {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+.experiences .experience p {
+  background-color: lightgrey;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+}
+.experiences .experience button {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-left: 6rem;
+  margin-right: 0rem;
 }
 footer {
   background-color: red;
   width: 100vw;
-  height: 30rem;
+  height: 35rem;
   margin-top: 5rem;
   margin-bottom: 0rem;
   margin-left: 0px;
