@@ -58,7 +58,7 @@ html{
 
 
 header{
-    height: 70rem;
+    height: 100vh;
     background-image: url('header-img.jpg'); 
     .nav-bar{
         .dims(100%, 10rem);
@@ -78,6 +78,42 @@ header{
             }
         }
     }
+
+    .header-content{
+        background-color: grey;
+        .dims(100vw, 50rem);
+        .flex(space-around, center, row);
+        .login{
+            background-color: green;
+            .dims(30rem, 40rem);
+        }
+
+        .tagline{
+            font-size: 5rem;
+            text-align: center;
+        }
+    
+
+    }
 }
 
+.about{
+
+    background-color: darkGrey;
+    .dims(75vw, 50rem);
+    .margins();
+}
+
+.experiences{
+
+    background-color: skyBlue;
+    .dims(75vw, 70rem);
+    .margins();
+}
+
+footer{
+    background-color: red;
+    .dims(100vw, 20rem);
+    .margins(5rem, 0rem, 0px, 0px);
+}
 
