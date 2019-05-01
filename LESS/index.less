@@ -105,7 +105,6 @@ html{
 
             .pass-word{
                 .margins(0rem, 1rem,0rem,0rem);
-
             }
 
             button{
@@ -114,22 +113,19 @@ html{
                 margin: 8px 0;
                 box-sizing: border-box; 
             }
-            
         }
 
         .tagline{
             font-size: 5rem;
             text-align: center;
         }
-    
-
     }
 }
 
 .about{
 
     background-color: darkGrey;
-    .dims(75vw, 65rem);
+    .dims(75vw, 80rem);
     .margins();
 
     img{
@@ -151,7 +147,6 @@ html{
     .dims(75vw, 40rem);
     .margins();
     .flex(space-around, center, row);
-
     .experience{
         background-color: white;
        
@@ -295,3 +290,35 @@ footer{
     }
 }
 
+
+@media(max-width:800px){
+    .about{
+        background-color: red;
+    }
+
+    .header{
+        .nav-bar{
+            .dims(100%, 15rem);
+            .flex(space-between, center, column);
+            nav{
+                .flex(space-around, center, row);
+                .dims()
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+
+    .header{
+
+        .about{
+            background-color: blue;
+        }
+
+        .header-content{
+            .flex(space-between, center, column-reverse);
+            height: 60rem;
+        }
+    }
+}

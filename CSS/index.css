@@ -234,7 +234,7 @@ html {
 .about {
   background-color: darkGrey;
   width: 75vw;
-  height: 65rem;
+  height: 80rem;
   margin-top: 5rem;
   margin-bottom: 0;
   margin-left: 18rem;
@@ -425,4 +425,37 @@ footer .copyright {
 }
 .aboutUs-content .revers {
   flex-direction: row-reverse;
+}
+@media (max-width: 800px) {
+  .about {
+    background-color: red;
+  }
+  .header .nav-bar {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header .nav-bar nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 0;
+    height: 0;
+  }
+}
+@media (max-width: 500px) {
+  .header .about {
+    background-color: blue;
+  }
+  .header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 60rem;
+  }
 }
