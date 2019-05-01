@@ -1,3 +1,297 @@
 @import './variables';
 @import './mixins';
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900');
+
+
+//My reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+///////////////////////
+//STYLING STARTS HERE//
+//////////////////////
+
+//Main Page
+.header{
+    height: 100vh;
+    background-image: url('header-img.jpg'); 
+    .nav-bar{
+        .dims(100%, 10rem);
+        
+        .flex(space-between, center, row);
+        nav{
+            .flex(space-around, center, row);
+            text-decoration: none;
+            font-size: 2rem;
+            a{
+                margin-left: @navBar-Margin;
+                margin-right: 1rem;
+
+            }
+            a:last-Child{
+                margin-right: 3rem;
+            }
+        }
+    }
+
+    .header-content{
+        background-color: grey;
+        .dims(100vw, 50rem);
+        .flex(space-around, center, row);
+        .login{
+            background-color: green;
+            .dims(30rem, 40rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                font-size: 3rem;
+                margin-top: 3rem;
+            }
+            input{
+                width: 80%;
+                padding: 7px 20px;
+                margin: 8px 0;
+                box-sizing: border-box; 
+            }
+            .user-name{
+                .margins(3rem, 2rem,0rem,0rem);
+            }
+
+            .pass-word{
+                .margins(0rem, 1rem,0rem,0rem);
+
+            }
+
+            button{
+                width: 70%;
+                padding: 7px 20px;
+                margin: 8px 0;
+                box-sizing: border-box; 
+            }
+            
+        }
+
+        .tagline{
+            font-size: 5rem;
+            text-align: center;
+        }
+    
+
+    }
+}
+
+.about{
+
+    background-color: darkGrey;
+    .dims(75vw, 65rem);
+    .margins();
+
+    img{
+        width: 75vw;
+    }
+    h1{
+        .margins(2rem, 2rem, 3rem, 1rem);
+        font-size: 3rem;
+    }
+    p{
+        .margins(3rem, 3rem, 0rem,0rem);
+        font-size: 2rem
+    }
+}
+
+.experiences{
+
+    background-color: skyBlue;
+    .dims(75vw, 40rem);
+    .margins();
+    .flex(space-around, center, row);
+
+    .experience{
+        background-color: white;
+       
+        .dims(25em, 35rem);
+        h1{
+            margin-left: 1rem;
+            font-size: 2rem;
+        }
+        .img-placeHolder{
+            background-color: pink;
+            .dims(20rem, 15rem);
+            .margins(1rem, 1rem, 2rem, 2rem);
+        }
+        h3{
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+        p{
+            background-color: lightgrey;
+            font-size: 1.3rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        button{
+            .margins(3rem, 2rem, 6rem, 0rem);
+        }
+    }
+}
+
+footer{
+    background-color: red;
+    .dims(100vw, 35rem);
+    .margins(5rem, 0rem, 0px, 0px);
+   
+    .footer-content{
+        
+        background-color: darkred;
+        .dims(70vw, 20rem);
+        .flex(space-between, center, row);
+        .margins(5rem, 5rem, 22rem, 5rem);
+        position: relative;
+        top: 5rem;
+
+        nav{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.75rem;
+            text-align: center;
+            a{
+                font-size: 2rem;
+                margin-top: 1rem;
+            }
+        }
+
+        h3{
+            font-size: 3rem;
+            font-weight:bold;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+    
+    .copyright{
+        font-size: 1.5rem;
+        .flex(center, center, row);
+    }
+}
+
+//About use
+.aboutUs-header{
+    background-color: limegreen;
+    .dims(100vw, 13rem);
+
+    .nav-bar{
+
+        .dims(100%, 10rem);
+        .flex(space-between, center, row);
+
+        nav{
+            .flex(space-around, center, row);
+            text-decoration: none;
+            font-size: 2rem;
+
+            a{
+                margin-left: @navBar-Margin;
+                margin-right: 1rem;
+
+            }
+            a:last-Child{
+                margin-right: 3rem;
+            }
+        }
+    }
+}
+
+.aboutUs-content{
+    
+    background-color: darkgreen;
+    margin-top: 3rem;
+
+    .bio{
+        background-color: green;
+        .dims(90vw, 25rem);
+        .margins(3re, 3rem, 7rem, 5rem);
+        .flex(space-around, center, row);
+
+        .profile{
+            background-color: limegreen;
+
+            h1{
+                font-size: 2rem;
+                text-align: center;
+                margin-top:1rem;
+            }
+        }
+
+        .profile-content{
+            .dims(90rem, 17.5rem);
+            background-color: yellowgreen;
+            h1{
+                font-size: 3rem;
+                font-weight: bold;
+                text-align: center;
+                margin-top:1rem;        
+            }          
+
+            p{
+                font-size: 2rem;
+            }
+        }
+    }  
+    
+    .revers{
+        flex-direction: row-reverse;
+    }
+}
+

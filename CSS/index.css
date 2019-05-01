@@ -1,0 +1,428 @@
+.width-100 {
+  width: 100%;
+}
+.border-bottom-grey {
+  border-bottom: 1px solid blue;
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.header {
+  height: 100vh;
+  background-image: url('header-img.jpg');
+}
+.header .nav-bar {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.header .nav-bar nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.header .nav-bar nav a {
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+.header .nav-bar nav a:last-Child {
+  margin-right: 3rem;
+}
+.header .header-content {
+  background-color: grey;
+  width: 100vw;
+  height: 50rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.header .header-content .login {
+  background-color: green;
+  width: 30rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .header-content .login h1 {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+.header .header-content .login input {
+  width: 80%;
+  padding: 7px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.header .header-content .login .user-name {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+.header .header-content .login .pass-word {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+.header .header-content .login button {
+  width: 70%;
+  padding: 7px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.header .header-content .tagline {
+  font-size: 5rem;
+  text-align: center;
+}
+.about {
+  background-color: darkGrey;
+  width: 75vw;
+  height: 65rem;
+  margin-top: 5rem;
+  margin-bottom: 0;
+  margin-left: 18rem;
+  margin-right: 18rem;
+}
+.about img {
+  width: 75vw;
+}
+.about h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  margin-right: 1rem;
+  font-size: 3rem;
+}
+.about p {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  font-size: 2rem;
+}
+.experiences {
+  background-color: skyBlue;
+  width: 75vw;
+  height: 40rem;
+  margin-top: 5rem;
+  margin-bottom: 0;
+  margin-left: 18rem;
+  margin-right: 18rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.experiences .experience {
+  background-color: white;
+  width: 25em;
+  height: 35rem;
+}
+.experiences .experience h1 {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+.experiences .experience .img-placeHolder {
+  background-color: pink;
+  width: 20rem;
+  height: 15rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.experiences .experience h3 {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+.experiences .experience p {
+  background-color: lightgrey;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+}
+.experiences .experience button {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-left: 6rem;
+  margin-right: 0rem;
+}
+footer {
+  background-color: red;
+  width: 100vw;
+  height: 35rem;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+footer .footer-content {
+  background-color: darkred;
+  width: 70vw;
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 22rem;
+  margin-right: 5rem;
+  position: relative;
+  top: 5rem;
+}
+footer .footer-content nav {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.75rem;
+  text-align: center;
+}
+footer .footer-content nav a {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+footer .footer-content h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+footer .footer-content p {
+  font-size: 2rem;
+}
+footer .copyright {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.aboutUs-header {
+  background-color: limegreen;
+  width: 100vw;
+  height: 13rem;
+}
+.aboutUs-header .nav-bar {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.aboutUs-header .nav-bar nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.aboutUs-header .nav-bar nav a {
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+.aboutUs-header .nav-bar nav a:last-Child {
+  margin-right: 3rem;
+}
+.aboutUs-content {
+  background-color: darkgreen;
+  margin-top: 3rem;
+}
+.aboutUs-content .bio {
+  background-color: green;
+  width: 90vw;
+  height: 25rem;
+  margin-top: 3re;
+  margin-bottom: 3rem;
+  margin-left: 7rem;
+  margin-right: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.aboutUs-content .bio .profile {
+  background-color: limegreen;
+}
+.aboutUs-content .bio .profile h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.aboutUs-content .bio .profile-content {
+  width: 90rem;
+  height: 17.5rem;
+  background-color: yellowgreen;
+}
+.aboutUs-content .bio .profile-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+.aboutUs-content .bio .profile-content p {
+  font-size: 2rem;
+}
+.aboutUs-content .revers {
+  flex-direction: row-reverse;
+}
