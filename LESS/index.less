@@ -57,13 +57,21 @@ html{
 //////////////////////
 
 //Main Page
+
+.container{
+    width: 99vw;
+}
 .header{
     height: 100vh;
+    width:99vw;
     background-image: url('header-img.jpg'); 
     .nav-bar{
-        .dims(100%, 10rem);
-        
+        //.dims(100%, 10rem);
         .flex(space-between, center, row);
+
+        img{
+            margin: 2rem;
+        }
         nav{
             .flex(space-around, center, row);
             text-decoration: none;
@@ -81,56 +89,32 @@ html{
 
     .header-content{
         background-color: grey;
-        .dims(100vw, 50rem);
-        .flex(space-around, center, row);
-        .login{
-            background-color: green;
-            .dims(30rem, 40rem);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            h1{
-                font-size: 3rem;
-                margin-top: 3rem;
-            }
-            input{
-                width: 80%;
-                padding: 7px 20px;
-                margin: 8px 0;
-                box-sizing: border-box; 
-            }
-            .user-name{
-                .margins(3rem, 2rem,0rem,0rem);
-            }
-
-            .pass-word{
-                .margins(0rem, 1rem,0rem,0rem);
-
-            }
-
-            button{
-                width: 70%;
-                padding: 7px 20px;
-                margin: 8px 0;
-                box-sizing: border-box; 
-            }
+        border: 2px solid rgb(200, 68, 68);
+        .dims(30rem, 40rem);
+        .flex(space-around, center, column);
+        margin-left: 17vw;
+        margin-top: 17rem;
+        button{
             
         }
+        
 
         .tagline{
             font-size: 5rem;
             text-align: center;
         }
-    
-
     }
 }
 
 .about{
-
-    background-color: darkGrey;
-    .dims(75vw, 65rem);
-    .margins();
+    background-color:  rgb(200, 68, 68);
+    margin-left: 12.5vw;
+    
+    .dims(75vw, auto);
+    margin: 0 auto;
+    margin-top: 3rem;
+    border: auto;
+    padding: 3rem;
 
     img{
         width: 75vw;
@@ -148,10 +132,10 @@ html{
 .experiences{
 
     background-color: skyBlue;
-    .dims(75vw, 40rem);
-    .margins();
+    .dims(70vw, 40rem);
+    margin-left: 15vw;
+    margin-top: 3rem;
     .flex(space-around, center, row);
-
     .experience{
         background-color: white;
        
@@ -184,16 +168,15 @@ html{
 }
 
 footer{
-    background-color: red;
-    .dims(100vw, 35rem);
+    background-color:black;
+    .dims(99vw, 30rem);
     .margins(5rem, 0rem, 0px, 0px);
    
     .footer-content{
-        
-        background-color: darkred;
-        .dims(70vw, 20rem);
+                
         .flex(space-between, center, row);
-        .margins(5rem, 5rem, 22rem, 5rem);
+        .margins(5rem, 5rem, 5rem, 5rem);
+        align-self: center;
         position: relative;
         top: 5rem;
 
@@ -206,16 +189,19 @@ footer{
             font-size: 1.75rem;
             text-align: center;
             a{
+                color: white; 
                 font-size: 2rem;
                 margin-top: 1rem;
             }
         }
 
         h3{
+            color: white;
             font-size: 3rem;
             font-weight:bold;
         }
         p{
+            color: white;
             font-size: 2rem;
         }
     }
@@ -226,72 +212,182 @@ footer{
     }
 }
 
-//About use
-.aboutUs-header{
-    background-color: limegreen;
-    .dims(100vw, 13rem);
+//About us
+    .aboutUs-header{
+       // background-color: limegreen;
+        .dims(100vw, 20rem);
+        background-image: url('AboutMe-HeaderImage.png');
+        .nav-bar{
+    
 
-    .nav-bar{
-
-        .dims(100%, 10rem);
-        .flex(space-between, center, row);
-
-        nav{
+            .dims(90vw, 15rem);
+            .flex(space-between, center , row);
+    
+            .logo{
+                margin: 0 auto;
+            }
+    
+            nav{
+                .flex(space-around, center, row);
+                text-decoration: none;
+                font-size: 2rem;
+    
+                a{
+                    margin-left: @navBar-Margin;
+                    margin-right: 1rem;
+    
+                }
+                a:last-Child{
+                    margin-right: 3rem;
+                }
+            }
+        }
+    }
+    
+    .aboutUs-content{
+        
+        
+        margin-top: 3rem;
+    
+        .bio{
+            background-color: lightgray;
+            .dims(90vw, 25rem);
+            .margins(3rem, 3rem, 5rem, 5rem);
             .flex(space-around, center, row);
-            text-decoration: none;
-            font-size: 2rem;
-
-            a{
-                margin-left: @navBar-Margin;
-                margin-right: 1rem;
-
+            
+            img{
+                margin: 2rem;
             }
-            a:last-Child{
-                margin-right: 3rem;
+            .profile{
+                //background-color: limegreen;
+    
+                h1{
+                    font-size: 2rem;
+                    text-align: center;
+                    margin-top:1rem;
+                }
+            }
+    
+            .profile-content{
+                width: auto;
+                //padding: 1rem, 1rem, 1rem, 1rem;
+               // background-color: yellowgreen;
+                h1{
+                    font-size: 3rem;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-top:1rem;        
+                }          
+    
+                p{
+                    font-size: 2rem;
+                    .margins(1rem, 1rem, 1rem, 1rem);
+                    padding: 1rem, 1rem, 1rem, 1rem;
+    
+                }
+            }
+        }  
+        
+        .revers{
+            flex-direction: row-reverse;
+        }
+    }
+
+
+/* ------------------------ 800 px max width starts here---------------------------------*/
+@media(max-width:800px){
+
+    /*Main Page (800p)x*/
+    .header{
+        .nav-bar{
+            .dims(100%, 10rem);
+            .flex(space-between, center, column);
+            nav{
+                .flex(space-around, center, row);
+                .dims()
+            }
+        }
+
+        .header-content{
+
+            margin-top: 30rem;
+            margin-left: 30vw;
+        }
+    }
+
+    .about{
+        height: 50rem;
+    }
+
+
+
+    /*About Us (800p)x*/
+    .aboutUs-header{
+        .dims(99vw, 25rem);
+        .nav-bar{
+            .flex(space-between, center, column);
+            .logo{
+                .margins(1rem, 1rem, 1rem, 1rem);
+            }
+            nav{
+                margin-top: 2rem;
+                .flex(space-around, center, row);
+                .dims(99vw, 5rem);
+            }
+        }
+    }
+
+    .aboutUs-content{
+        .bio{
+            .dims(90vw, 35rem);
+            .profile-content{
+                .dims(90rem, 33rem);
+
             }
         }
     }
 }
+/* ------------------------ 500 px max width starts here---------------------------------*/
+@media(max-width:500px){
 
-.aboutUs-content{
-    
-    background-color: darkgreen;
-    margin-top: 3rem;
+    .header{
+        .nav-bar{
+            nav{
+                
+                .flex(space-between, center, column);
+                a{
+                    margin-top: 2rem;
+                }
+            }
+        }
+        .header-content{
+            margin-top: 35rem;
+            margin-left: 17vw;
+        }
+    }
 
-    .bio{
-        background-color: green;
-        .dims(90vw, 25rem);
-        .margins(3re, 3rem, 7rem, 5rem);
-        .flex(space-around, center, row);
+    footer{
+        .dims(100vw, 35rem);
+        .footer-content{
+            .flex(space-between, center, column);
+        }
+    }
+      
+    /*About Us (500px)*/
+    .aboutUs-content{
+        margin: 0 auto; 
+        .bio{
+            height: 50rem;
+            margin: 0 auto; 
+            margin-top: 3rem;
+            .flex(space-between, center, column);
+            .profile-content{
+                width: auto;
+                p{
 
-        .profile{
-            background-color: limegreen;
-
-            h1{
-                font-size: 2rem;
-                text-align: center;
-                margin-top:1rem;
+                }
             }
         }
 
-        .profile-content{
-            .dims(90rem, 17.5rem);
-            background-color: yellowgreen;
-            h1{
-                font-size: 3rem;
-                font-weight: bold;
-                text-align: center;
-                margin-top:1rem;        
-            }          
-
-            p{
-                font-size: 2rem;
-            }
-        }
-    }  
-    
-    .revers{
-        flex-direction: row-reverse;
     }
 }
-

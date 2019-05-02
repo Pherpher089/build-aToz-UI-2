@@ -155,17 +155,22 @@ table {
 html {
   font-size: 62.5%;
 }
+.container {
+  width: 99vw;
+}
 .header {
   height: 100vh;
+  width: 99vw;
   background-image: url('header-img.jpg');
 }
 .header .nav-bar {
-  width: 100%;
-  height: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+.header .nav-bar img {
+  margin: 2rem;
 }
 .header .nav-bar nav {
   display: flex;
@@ -184,61 +189,29 @@ html {
 }
 .header .header-content {
   background-color: grey;
-  width: 100vw;
-  height: 50rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-}
-.header .header-content .login {
-  background-color: green;
+  border: 2px solid #c84444;
   width: 30rem;
   height: 40rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-}
-.header .header-content .login h1 {
-  font-size: 3rem;
-  margin-top: 3rem;
-}
-.header .header-content .login input {
-  width: 80%;
-  padding: 7px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-.header .header-content .login .user-name {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
-}
-.header .header-content .login .pass-word {
-  margin-top: 0rem;
-  margin-bottom: 1rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
-}
-.header .header-content .login button {
-  width: 70%;
-  padding: 7px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
+  flex-direction: column;
+  margin-left: 17vw;
+  margin-top: 17rem;
 }
 .header .header-content .tagline {
   font-size: 5rem;
   text-align: center;
 }
 .about {
-  background-color: darkGrey;
+  background-color: #c84444;
+  margin-left: 12.5vw;
   width: 75vw;
-  height: 65rem;
-  margin-top: 5rem;
-  margin-bottom: 0;
-  margin-left: 18rem;
-  margin-right: 18rem;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border: auto;
+  padding: 3rem;
 }
 .about img {
   width: 75vw;
@@ -259,12 +232,10 @@ html {
 }
 .experiences {
   background-color: skyBlue;
-  width: 75vw;
+  width: 70vw;
   height: 40rem;
-  margin-top: 5rem;
-  margin-bottom: 0;
-  margin-left: 18rem;
-  margin-right: 18rem;
+  margin-left: 15vw;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -306,26 +277,24 @@ html {
   margin-right: 0rem;
 }
 footer {
-  background-color: red;
-  width: 100vw;
-  height: 35rem;
+  background-color: black;
+  width: 99vw;
+  height: 30rem;
   margin-top: 5rem;
   margin-bottom: 0rem;
   margin-left: 0px;
   margin-right: 0px;
 }
 footer .footer-content {
-  background-color: darkred;
-  width: 70vw;
-  height: 20rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  margin-left: 22rem;
+  margin-left: 5rem;
   margin-right: 5rem;
+  align-self: center;
   position: relative;
   top: 5rem;
 }
@@ -339,14 +308,17 @@ footer .footer-content nav {
   text-align: center;
 }
 footer .footer-content nav a {
+  color: white;
   font-size: 2rem;
   margin-top: 1rem;
 }
 footer .footer-content h3 {
+  color: white;
   font-size: 3rem;
   font-weight: bold;
 }
 footer .footer-content p {
+  color: white;
   font-size: 2rem;
 }
 footer .copyright {
@@ -357,17 +329,20 @@ footer .copyright {
   flex-direction: row;
 }
 .aboutUs-header {
-  background-color: limegreen;
   width: 100vw;
-  height: 13rem;
+  height: 20rem;
+  background-image: url('AboutMe-HeaderImage.png');
 }
 .aboutUs-header .nav-bar {
-  width: 100%;
-  height: 10rem;
+  width: 90vw;
+  height: 15rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+.aboutUs-header .nav-bar .logo {
+  margin: 0 auto;
 }
 .aboutUs-header .nav-bar nav {
   display: flex;
@@ -385,24 +360,23 @@ footer .copyright {
   margin-right: 3rem;
 }
 .aboutUs-content {
-  background-color: darkgreen;
   margin-top: 3rem;
 }
 .aboutUs-content .bio {
-  background-color: green;
+  background-color: lightgray;
   width: 90vw;
   height: 25rem;
-  margin-top: 3re;
+  margin-top: 3rem;
   margin-bottom: 3rem;
-  margin-left: 7rem;
+  margin-left: 5rem;
   margin-right: 5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
 }
-.aboutUs-content .bio .profile {
-  background-color: limegreen;
+.aboutUs-content .bio img {
+  margin: 2rem;
 }
 .aboutUs-content .bio .profile h1 {
   font-size: 2rem;
@@ -410,9 +384,7 @@ footer .copyright {
   margin-top: 1rem;
 }
 .aboutUs-content .bio .profile-content {
-  width: 90rem;
-  height: 17.5rem;
-  background-color: yellowgreen;
+  width: auto;
 }
 .aboutUs-content .bio .profile-content h1 {
   font-size: 3rem;
@@ -422,7 +394,115 @@ footer .copyright {
 }
 .aboutUs-content .bio .profile-content p {
   font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem, 1rem, 1rem, 1rem;
 }
 .aboutUs-content .revers {
   flex-direction: row-reverse;
+}
+/* ------------------------ 800 px max width starts here---------------------------------*/
+@media (max-width: 800px) {
+  /*Main Page (800p)x*/
+  .header .nav-bar {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header .nav-bar nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+  }
+  .header .header-content {
+    margin-top: 30rem;
+    margin-left: 30vw;
+  }
+  .about {
+    height: 50rem;
+  }
+  /*About Us (800p)x*/
+  .aboutUs-header {
+    width: 99vw;
+    height: 25rem;
+  }
+  .aboutUs-header .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutUs-header .nav-bar .logo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .aboutUs-header .nav-bar nav {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 99vw;
+    height: 5rem;
+  }
+  .aboutUs-content .bio {
+    width: 90vw;
+    height: 35rem;
+  }
+  .aboutUs-content .bio .profile-content {
+    width: 90rem;
+    height: 33rem;
+  }
+}
+/* ------------------------ 500 px max width starts here---------------------------------*/
+@media (max-width: 500px) {
+  .header .nav-bar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header .nav-bar nav a {
+    margin-top: 2rem;
+  }
+  .header .header-content {
+    margin-top: 35rem;
+    margin-left: 17vw;
+  }
+  footer {
+    width: 100vw;
+    height: 35rem;
+  }
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  /*About Us (500px)*/
+  .aboutUs-content {
+    margin: 0 auto;
+  }
+  .aboutUs-content .bio {
+    height: 50rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutUs-content .bio .profile-content {
+    width: auto;
+  }
 }
