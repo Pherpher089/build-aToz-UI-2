@@ -155,13 +155,15 @@ table {
 html {
   font-size: 62.5%;
 }
+.container {
+  width: 99vw;
+}
 .header {
   height: 100vh;
+  width: 99vw;
   background-image: url('header-img.jpg');
 }
 .header .nav-bar {
-  width: 100%;
-  height: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -184,54 +186,21 @@ html {
 }
 .header .header-content {
   background-color: grey;
-  width: 100vw;
-  height: 50rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-}
-.header .header-content .login {
-  background-color: green;
   width: 30rem;
   height: 40rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-}
-.header .header-content .login h1 {
-  font-size: 3rem;
-  margin-top: 3rem;
-}
-.header .header-content .login input {
-  width: 80%;
-  padding: 7px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-.header .header-content .login .user-name {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
-}
-.header .header-content .login .pass-word {
-  margin-top: 0rem;
-  margin-bottom: 1rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
-}
-.header .header-content .login button {
-  width: 70%;
-  padding: 7px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
+  flex-direction: column;
+  margin-left: 17vw;
+  margin-top: 17rem;
 }
 .header .header-content .tagline {
   font-size: 5rem;
   text-align: center;
 }
 .about {
+  margin-left: 12.5vw;
   background-color: darkGrey;
   width: 75vw;
   height: 80rem;
@@ -306,7 +275,7 @@ html {
   margin-right: 0rem;
 }
 footer {
-  background-color: red;
+  background-color: black;
   width: 99vw;
   height: 20rem;
   margin-top: 5rem;
@@ -315,7 +284,6 @@ footer {
   margin-right: 0px;
 }
 footer .footer-content {
-  background-color: darkred;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -338,14 +306,17 @@ footer .footer-content nav {
   text-align: center;
 }
 footer .footer-content nav a {
+  color: white;
   font-size: 2rem;
   margin-top: 1rem;
 }
 footer .footer-content h3 {
+  color: white;
   font-size: 3rem;
   font-weight: bold;
 }
 footer .footer-content p {
+  color: white;
   font-size: 2rem;
 }
 footer .copyright {
@@ -486,9 +457,6 @@ footer .copyright {
 }
 /* ------------------------ 500 px max width starts here---------------------------------*/
 @media (max-width: 500px) {
-  .header .about {
-    background-color: blue;
-  }
   .header .header-content {
     display: flex;
     justify-content: space-between;

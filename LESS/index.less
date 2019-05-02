@@ -57,13 +57,18 @@ html{
 //////////////////////
 
 //Main Page
+
+.container{
+    width: 99vw;
+}
 .header{
     height: 100vh;
+    width:99vw;
     background-image: url('header-img.jpg'); 
     .nav-bar{
-        .dims(100%, 10rem);
-        
+        //.dims(100%, 10rem);
         .flex(space-between, center, row);
+
         nav{
             .flex(space-around, center, row);
             text-decoration: none;
@@ -80,40 +85,15 @@ html{
     }
 
     .header-content{
-        background-color: grey;
-        .dims(100vw, 50rem);
-        .flex(space-around, center, row);
-        .login{
-            background-color: green;
-            .dims(30rem, 40rem);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            h1{
-                font-size: 3rem;
-                margin-top: 3rem;
-            }
-            input{
-                width: 80%;
-                padding: 7px 20px;
-                margin: 8px 0;
-                box-sizing: border-box; 
-            }
-            .user-name{
-                .margins(3rem, 2rem,0rem,0rem);
-            }
-
-            .pass-word{
-                .margins(0rem, 1rem,0rem,0rem);
-            }
-
-            button{
-                width: 70%;
-                padding: 7px 20px;
-                margin: 8px 0;
-                box-sizing: border-box; 
-            }
+         background-color: grey;
+        .dims(30rem, 40rem);
+        .flex(space-around, center, column);
+        margin-left: 17vw;
+        margin-top: 17rem;
+        button{
+            
         }
+        
 
         .tagline{
             font-size: 5rem;
@@ -123,7 +103,7 @@ html{
 }
 
 .about{
-
+    margin-left: 12.5vw;
     background-color: darkGrey;
     .dims(75vw, 80rem);
     .margins();
@@ -179,14 +159,12 @@ html{
 }
 
 footer{
-    background-color: red;
+    background-color:black;
     .dims(99vw, 20rem);
     .margins(5rem, 0rem, 0px, 0px);
    
     .footer-content{
-        
-        background-color: darkred;
-        
+                
         .flex(space-between, center, row);
         .margins(5rem, 5rem, 5rem, 5rem);
         align-self: center;
@@ -202,16 +180,19 @@ footer{
             font-size: 1.75rem;
             text-align: center;
             a{
+                color: white; 
                 font-size: 2rem;
                 margin-top: 1rem;
             }
         }
 
         h3{
+            color: white;
             font-size: 3rem;
             font-weight:bold;
         }
         p{
+            color: white;
             font-size: 2rem;
         }
     }
@@ -306,7 +287,7 @@ footer{
 
 /* ------------------------ 800 px max width starts here---------------------------------*/
 @media(max-width:800px){
-    
+
     /*Main Page (800p)x*/
     .header{
         .nav-bar{
@@ -317,7 +298,11 @@ footer{
                 .dims()
             }
         }
+
+
     }
+
+
 
     /*About Us (800p)x*/
     .aboutUs-header{
@@ -349,11 +334,6 @@ footer{
 @media(max-width:500px){
 
     .header{
-
-        .about{
-            background-color: blue;
-        }
-
         .header-content{
             .flex(space-between, center, column-reverse);
             height: 60rem;
