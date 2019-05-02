@@ -362,7 +362,7 @@ footer .copyright {
   height: 13rem;
 }
 .aboutUs-header .nav-bar {
-  width: 100%;
+  width: 90vw;
   height: 10rem;
   display: flex;
   justify-content: space-between;
@@ -394,7 +394,7 @@ footer .copyright {
   height: 25rem;
   margin-top: 3re;
   margin-bottom: 3rem;
-  margin-left: 7rem;
+  margin-left: 5rem;
   margin-right: 5rem;
   display: flex;
   justify-content: space-around;
@@ -412,6 +412,7 @@ footer .copyright {
 .aboutUs-content .bio .profile-content {
   width: 90rem;
   height: 17.5rem;
+  padding: 1rem, 1rem, 1rem, 1rem;
   background-color: yellowgreen;
 }
 .aboutUs-content .bio .profile-content h1 {
@@ -422,6 +423,11 @@ footer .copyright {
 }
 .aboutUs-content .bio .profile-content p {
   font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem, 1rem, 1rem, 1rem;
 }
 .aboutUs-content .revers {
   flex-direction: row-reverse;
@@ -432,13 +438,38 @@ footer .copyright {
   }
   .header .nav-bar {
     width: 100%;
-    height: 15rem;
+    height: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
   }
   .header .nav-bar nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 0;
+    height: 0;
+  }
+  .aboutUs-header {
+    width: 99vw;
+    height: 25rem;
+  }
+  .aboutUs-header .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutUs-header .nav-bar .logo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .aboutUs-header .nav-bar nav {
+    margin-top: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
