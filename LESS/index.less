@@ -180,7 +180,7 @@ html{
 
 footer{
     background-color: red;
-    .dims(100vw, 35rem);
+    .dims(99vw, 35rem);
     .margins(5rem, 0rem, 0px, 0px);
    
     .footer-content{
@@ -221,78 +221,87 @@ footer{
     }
 }
 
-//About use
-.aboutUs-header{
-    background-color: limegreen;
-    .dims(100vw, 13rem);
+//About us
 
-    .nav-bar{
 
-        .dims(90vw, 10rem);
-        .flex(space-between, center, row);
+    .aboutUs-header{
+        background-color: limegreen;
+        .dims(100vw, 20rem);
+        
+        .nav-bar{
+    
 
-        nav{
+            .dims(90vw, 15rem);
+            .flex(space-between, center , row);
+    
+            .logo{
+                margin: 0 auto;
+            }
+    
+            nav{
+                .flex(space-around, center, row);
+                text-decoration: none;
+                font-size: 2rem;
+    
+                a{
+                    margin-left: @navBar-Margin;
+                    margin-right: 1rem;
+    
+                }
+                a:last-Child{
+                    margin-right: 3rem;
+                }
+            }
+        }
+    }
+    
+    .aboutUs-content{
+        
+        background-color: darkgreen;
+        margin-top: 3rem;
+    
+        .bio{
+            background-color: green;
+            .dims(90vw, 25rem);
+            .margins(3re, 3rem, 5rem, 5rem);
             .flex(space-around, center, row);
-            text-decoration: none;
-            font-size: 2rem;
-
-            a{
-                margin-left: @navBar-Margin;
-                margin-right: 1rem;
-
-            }
-            a:last-Child{
-                margin-right: 3rem;
-            }
-        }
-    }
-}
-
-.aboutUs-content{
     
-    background-color: darkgreen;
-    margin-top: 3rem;
-
-    .bio{
-        background-color: green;
-        .dims(90vw, 25rem);
-        .margins(3re, 3rem, 5rem, 5rem);
-        .flex(space-around, center, row);
-
-        .profile{
-            background-color: limegreen;
-
-            h1{
-                font-size: 2rem;
-                text-align: center;
-                margin-top:1rem;
+            .profile{
+                background-color: limegreen;
+    
+                h1{
+                    font-size: 2rem;
+                    text-align: center;
+                    margin-top:1rem;
+                }
             }
-        }
-
-        .profile-content{
-            .dims(90rem, 17.5rem);
-            padding: 1rem, 1rem, 1rem, 1rem;
-            background-color: yellowgreen;
-            h1{
-                font-size: 3rem;
-                font-weight: bold;
-                text-align: center;
-                margin-top:1rem;        
-            }          
-
-            p{
-                font-size: 2rem;
-                .margins(1rem, 1rem, 1rem, 1rem);
+    
+            .profile-content{
+                .dims(90rem, 17.5rem);
                 padding: 1rem, 1rem, 1rem, 1rem;
-
-            }
-        }
-    }  
+                background-color: yellowgreen;
+                h1{
+                    font-size: 3rem;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-top:1rem;        
+                }          
     
-    .revers{
-        flex-direction: row-reverse;
+                p{
+                    font-size: 2rem;
+                    .margins(1rem, 1rem, 1rem, 1rem);
+                    padding: 1rem, 1rem, 1rem, 1rem;
+    
+                }
+            }
+        }  
+        
+        .revers{
+            flex-direction: row-reverse;
+        }
     }
-}
+
+
 
 
 @media(max-width:800px){
@@ -321,7 +330,17 @@ footer{
             nav{
                 margin-top: 2rem;
                 .flex(space-around, center, row);
-                .dims()
+                .dims(99vw, 5rem);
+            }
+        }
+    }
+
+    .aboutUs-content{
+        .bio{
+            .dims(90vw, 35rem);
+            .profile-content{
+                .dims(90rem, 33rem);
+
             }
         }
     }

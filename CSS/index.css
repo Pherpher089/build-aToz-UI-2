@@ -307,7 +307,7 @@ html {
 }
 footer {
   background-color: red;
-  width: 100vw;
+  width: 99vw;
   height: 35rem;
   margin-top: 5rem;
   margin-bottom: 0rem;
@@ -359,15 +359,18 @@ footer .copyright {
 .aboutUs-header {
   background-color: limegreen;
   width: 100vw;
-  height: 13rem;
+  height: 20rem;
 }
 .aboutUs-header .nav-bar {
   width: 90vw;
-  height: 10rem;
+  height: 15rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+.aboutUs-header .nav-bar .logo {
+  margin: 0 auto;
 }
 .aboutUs-header .nav-bar nav {
   display: flex;
@@ -474,8 +477,16 @@ footer .copyright {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    width: 0;
-    height: 0;
+    width: 99vw;
+    height: 5rem;
+  }
+  .aboutUs-content .bio {
+    width: 90vw;
+    height: 35rem;
+  }
+  .aboutUs-content .bio .profile-content {
+    width: 90rem;
+    height: 33rem;
   }
 }
 @media (max-width: 500px) {
