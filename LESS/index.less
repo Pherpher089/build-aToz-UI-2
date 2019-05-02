@@ -69,6 +69,9 @@ html{
         //.dims(100%, 10rem);
         .flex(space-between, center, row);
 
+        img{
+            margin: 2rem;
+        }
         nav{
             .flex(space-around, center, row);
             text-decoration: none;
@@ -85,7 +88,8 @@ html{
     }
 
     .header-content{
-         background-color: grey;
+        background-color: grey;
+        border: 2px solid rgb(200, 68, 68);
         .dims(30rem, 40rem);
         .flex(space-around, center, column);
         margin-left: 17vw;
@@ -103,10 +107,14 @@ html{
 }
 
 .about{
+    background-color:  rgb(200, 68, 68);
     margin-left: 12.5vw;
-    background-color: darkGrey;
-    .dims(75vw, 80rem);
-    .margins();
+    
+    .dims(75vw, auto);
+    margin: 0 auto;
+    margin-top: 3rem;
+    border: auto;
+    padding: 3rem;
 
     img{
         width: 75vw;
@@ -124,8 +132,9 @@ html{
 .experiences{
 
     background-color: skyBlue;
-    .dims(75vw, 40rem);
-    .margins();
+    .dims(70vw, 40rem);
+    margin-left: 15vw;
+    margin-top: 3rem;
     .flex(space-around, center, row);
     .experience{
         background-color: white;
@@ -160,7 +169,7 @@ html{
 
 footer{
     background-color:black;
-    .dims(99vw, 20rem);
+    .dims(99vw, 30rem);
     .margins(5rem, 0rem, 0px, 0px);
    
     .footer-content{
@@ -299,7 +308,15 @@ footer{
             }
         }
 
+        .header-content{
 
+            margin-top: 30rem;
+            margin-left: 30vw;
+        }
+    }
+
+    .about{
+        height: 50rem;
     }
 
 
@@ -334,9 +351,18 @@ footer{
 @media(max-width:500px){
 
     .header{
+        .nav-bar{
+            nav{
+                
+                .flex(space-between, center, column);
+                a{
+                    margin-top: 2rem;
+                }
+            }
+        }
         .header-content{
-            .flex(space-between, center, column-reverse);
-            height: 60rem;
+            margin-top: 35rem;
+            margin-left: 17vw;
         }
     }
 

@@ -169,6 +169,9 @@ html {
   align-items: center;
   flex-direction: row;
 }
+.header .nav-bar img {
+  margin: 2rem;
+}
 .header .nav-bar nav {
   display: flex;
   justify-content: space-around;
@@ -186,6 +189,7 @@ html {
 }
 .header .header-content {
   background-color: grey;
+  border: 2px solid #c84444;
   width: 30rem;
   height: 40rem;
   display: flex;
@@ -200,14 +204,14 @@ html {
   text-align: center;
 }
 .about {
+  background-color: #c84444;
   margin-left: 12.5vw;
-  background-color: darkGrey;
   width: 75vw;
-  height: 80rem;
-  margin-top: 0 auto;
-  margin-bottom: 0 auto;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border: auto;
+  padding: 3rem;
 }
 .about img {
   width: 75vw;
@@ -228,12 +232,10 @@ html {
 }
 .experiences {
   background-color: skyBlue;
-  width: 75vw;
+  width: 70vw;
   height: 40rem;
-  margin-top: 0 auto;
-  margin-bottom: 0 auto;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
+  margin-left: 15vw;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -277,7 +279,7 @@ html {
 footer {
   background-color: black;
   width: 99vw;
-  height: 20rem;
+  height: 30rem;
   margin-top: 5rem;
   margin-bottom: 0rem;
   margin-left: 0px;
@@ -420,6 +422,13 @@ footer .copyright {
     width: auto;
     height: auto;
   }
+  .header .header-content {
+    margin-top: 30rem;
+    margin-left: 30vw;
+  }
+  .about {
+    height: 50rem;
+  }
   /*About Us (800p)x*/
   .aboutUs-header {
     width: 99vw;
@@ -457,12 +466,18 @@ footer .copyright {
 }
 /* ------------------------ 500 px max width starts here---------------------------------*/
 @media (max-width: 500px) {
-  .header .header-content {
+  .header .nav-bar nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column-reverse;
-    height: 60rem;
+    flex-direction: column;
+  }
+  .header .nav-bar nav a {
+    margin-top: 2rem;
+  }
+  .header .header-content {
+    margin-top: 35rem;
+    margin-left: 17vw;
   }
   footer {
     width: 100vw;
