@@ -262,7 +262,7 @@ footer{
         .bio{
             background-color: lightgray;
             .dims(90vw, 25rem);
-            .margins(3re, 3rem, 5rem, 5rem);
+            .margins(3rem, 3rem, 5rem, 5rem);
             .flex(space-around, center, row);
             
             img{
@@ -279,8 +279,8 @@ footer{
             }
     
             .profile-content{
-                .dims(90rem, 17.5rem);
-                padding: 1rem, 1rem, 1rem, 1rem;
+                width: auto;
+                //padding: 1rem, 1rem, 1rem, 1rem;
                // background-color: yellowgreen;
                 h1{
                     font-size: 3rem;
@@ -306,11 +306,8 @@ footer{
 
 /* ------------------------ 800 px max width starts here---------------------------------*/
 @media(max-width:800px){
-
-
-      /*******************/
-     /*Main Page (800p)x*/
-    /*******************/
+    
+    /*Main Page (800p)x*/
     .header{
         .nav-bar{
             .dims(100%, 10rem);
@@ -322,10 +319,7 @@ footer{
         }
     }
 
-
-      /******************/
-     /*About Us (800p)x*/
-    /******************/
+    /*About Us (800p)x*/
     .aboutUs-header{
         .dims(99vw, 25rem);
         .nav-bar{
@@ -351,7 +345,7 @@ footer{
         }
     }
 }
-
+/* ------------------------ 500 px max width starts here---------------------------------*/
 @media(max-width:500px){
 
     .header{
@@ -367,6 +361,27 @@ footer{
     }
 
     footer{
-        
+        .dims(100vw, 35rem);
+        .footer-content{
+            .flex(space-between, center, column);
+        }
+    }
+      
+    /*About Us (500px)*/
+    .aboutUs-content{
+        margin: 0 auto; 
+        .bio{
+            height: 50rem;
+            margin: 0 auto; 
+            margin-top: 3rem;
+            .flex(space-between, center, column);
+            .profile-content{
+                width: auto;
+                p{
+
+                }
+            }
+        }
+
     }
 }

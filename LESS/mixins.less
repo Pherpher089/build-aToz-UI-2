@@ -13,13 +13,13 @@
     flex-direction: @dir;
   }
 
-  .dims(@w: 0, @h: 0)
+  .dims(@w: auto, @h: auto)
   {
     width: @w;
     height: @h;
   }
 
-  .margins(@mt: 5rem, @mb: 0, @ml: 18rem, @mr: 18rem){
+  .margins(@mt: 0 auto, @mb: 0 auto, @ml: 0 auto, @mr: 0 auto){
     //all arguments are set to a content area by default
     margin-top: @mt;
     margin-bottom: @mb;
