@@ -6,22 +6,27 @@
 }
 .tabs {
   width: 100%;
+  border-radius: 8px;
 }
 .tabs .tabs-items {
   width: 100%;
-  height: 300px;
+  height: 200px;
   display: flex;
   justify-content: center;
   padding-top: 60px;
 }
 .tabs .tabs-item {
   display: none;
-  width: 75%;
+  width: 95%;
+  height: 20rem;
 }
 .tabs .tabs-item .tabs-item-title {
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 10px;
+}
+.tabs .tabs-item .tabs-item-description {
+  font-size: 25px;
 }
 .tabs .tabs-item-selected {
   display: block;
@@ -43,7 +48,7 @@
 }
 .tabs .tabs-link-selected {
   z-index: 2;
-  border-right: 1px solid #dc3545;
+  border-right: 7px solid #dc3545;
   background-color: white;
   color: black;
 }
@@ -210,13 +215,14 @@ html {
   background-image: url('header-img.jpg');
 }
 .header .nav-bar {
+  background-color: #dc3545;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
 .header .nav-bar img {
-  margin: 2rem;
+  margin: 1rem;
 }
 .header .nav-bar nav {
   display: flex;
@@ -227,36 +233,54 @@ html {
   font-size: 2rem;
 }
 .header .nav-bar nav a {
+  text-decoration: none;
   margin-left: 2rem;
   margin-right: 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 1rem;
 }
 .header .nav-bar nav a:last-Child {
   margin-right: 3rem;
 }
 .header .header-content {
-  background-color: grey;
-  border: 2px solid #c84444;
-  width: 30rem;
-  height: 40rem;
+  color: white;
+  background-color: #dc3545;
+  border-radius: 8px;
+  width: 25rem;
+  height: 30rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   margin-left: 17vw;
-  margin-top: 17rem;
+  margin-top: 7vh;
 }
 .header .header-content .tagline {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
 }
+.header .header-content button {
+  width: 8rem;
+  background-color: white;
+  color: #dc3545;
+  border-radius: 8px;
+}
+.header .header-content p {
+  font-size: 1.5rem;
+}
 .about {
-  background-color: #c84444;
+  background-color: #dc3545;
+  color: white;
   margin-left: 12.5vw;
   width: 75vw;
   height: auto;
   margin: 0 auto;
   margin-top: 3rem;
   border: auto;
+  border-radius: 8px;
   padding: 3rem;
 }
 .about img {
@@ -473,18 +497,22 @@ footer .copyright {
 }
 /* ------------------------ 500 px max width starts here---------------------------------*/
 @media (max-width: 500px) {
+  .header {
+    height: 120vh;
+  }
   .header .nav-bar nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
   }
   .header .nav-bar nav a {
+    align-self: center;
     margin-top: 2rem;
   }
   .header .header-content {
-    margin-top: 35rem;
-    margin-left: 17vw;
+    margin-top: 45rem;
+    margin-left: 25vw;
   }
   footer {
     width: 100vw;
