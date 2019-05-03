@@ -4,6 +4,57 @@
 .border-bottom-grey {
   border-bottom: 1px solid blue;
 }
+.tabs {
+  width: 100%;
+  border-radius: 8px;
+}
+.tabs .tabs-items {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.tabs .tabs-item {
+  display: none;
+  width: 95%;
+  height: 20rem;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item .tabs-item-description {
+  font-size: 25px;
+}
+.tabs .tabs-item-selected {
+  display: block;
+}
+.tabs .tabs-links {
+  display: flex;
+  background-color: #dc3545;
+}
+.tabs .tabs-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: #dc3545;
+  border-right: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: #f37582;
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  border-right: 7px solid #dc3545;
+  background-color: white;
+  color: black;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: white;
+}
 @font-face {
   font-family: 'PT Sans';
   font-style: italic;
@@ -164,13 +215,14 @@ html {
   background-image: url('header-img.jpg');
 }
 .header .nav-bar {
+  background-color: #dc3545;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
 .header .nav-bar img {
-  margin: 2rem;
+  margin: 1rem;
 }
 .header .nav-bar nav {
   display: flex;
@@ -181,36 +233,54 @@ html {
   font-size: 2rem;
 }
 .header .nav-bar nav a {
+  text-decoration: none;
   margin-left: 2rem;
   margin-right: 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 1rem;
 }
 .header .nav-bar nav a:last-Child {
   margin-right: 3rem;
 }
 .header .header-content {
-  background-color: grey;
-  border: 2px solid #c84444;
-  width: 30rem;
-  height: 40rem;
+  color: white;
+  background-color: #dc3545;
+  border-radius: 8px;
+  width: 25rem;
+  height: 30rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   margin-left: 17vw;
-  margin-top: 17rem;
+  margin-top: 7vh;
 }
 .header .header-content .tagline {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
 }
+.header .header-content button {
+  width: 8rem;
+  background-color: white;
+  color: #dc3545;
+  border-radius: 8px;
+}
+.header .header-content p {
+  font-size: 1.5rem;
+}
 .about {
-  background-color: #c84444;
+  background-color: #dc3545;
+  color: white;
   margin-left: 12.5vw;
   width: 75vw;
   height: auto;
   margin: 0 auto;
   margin-top: 3rem;
   border: auto;
+  border-radius: 8px;
   padding: 3rem;
 }
 .about img {
@@ -230,51 +300,12 @@ html {
   margin-right: 0rem;
   font-size: 2rem;
 }
-.experiences {
-  background-color: skyBlue;
-  width: 70vw;
-  height: 40rem;
-  margin-left: 15vw;
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-}
-.experiences .experience {
-  background-color: white;
-  width: 25em;
-  height: 35rem;
-}
-.experiences .experience h1 {
-  margin-left: 1rem;
-  font-size: 2rem;
-}
-.experiences .experience .img-placeHolder {
-  background-color: pink;
-  width: 20rem;
-  height: 15rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-.experiences .experience h3 {
-  margin-left: 1rem;
-  font-size: 1.5rem;
-}
-.experiences .experience p {
-  background-color: lightgrey;
-  font-size: 1.3rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  margin-top: 1rem;
-}
-.experiences .experience button {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  margin-left: 6rem;
-  margin-right: 0rem;
+.section {
+  width: 85vw;
+  margin: 1rem;
+  margin-top: 2rem;
+  margin-left: 7.5vw;
+  border: 2px solid #dc3545;
 }
 footer {
   background-color: black;
@@ -330,19 +361,17 @@ footer .copyright {
 }
 .aboutUs-header {
   width: 100vw;
-  height: 20rem;
-  background-image: url('AboutMe-HeaderImage.png');
+  height: 17rem;
+  background-color: #dc3545;
 }
 .aboutUs-header .nav-bar {
-  width: 90vw;
-  height: 15rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
 .aboutUs-header .nav-bar .logo {
-  margin: 0 auto;
+  margin: 1rem;
 }
 .aboutUs-header .nav-bar nav {
   display: flex;
@@ -353,8 +382,14 @@ footer .copyright {
   font-size: 2rem;
 }
 .aboutUs-header .nav-bar nav a {
+  text-decoration: none;
   margin-left: 2rem;
   margin-right: 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 1rem;
 }
 .aboutUs-header .nav-bar nav a:last-Child {
   margin-right: 3rem;
@@ -363,7 +398,9 @@ footer .copyright {
   margin-top: 3rem;
 }
 .aboutUs-content .bio {
-  background-color: lightgray;
+  background-color: #ece5e5;
+  border: 3px solid #dc3545;
+  border-radius: 8px;
   width: 90vw;
   height: 25rem;
   margin-top: 3rem;
@@ -379,9 +416,9 @@ footer .copyright {
   margin: 2rem;
 }
 .aboutUs-content .bio .profile h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
-  margin-top: 1rem;
+  font-weight: bold;
 }
 .aboutUs-content .bio .profile-content {
   width: auto;
@@ -390,14 +427,10 @@ footer .copyright {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 1rem;
 }
 .aboutUs-content .bio .profile-content p {
+  margin: 2rem;
   font-size: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
   padding: 1rem, 1rem, 1rem, 1rem;
 }
 .aboutUs-content .revers {
@@ -466,18 +499,22 @@ footer .copyright {
 }
 /* ------------------------ 500 px max width starts here---------------------------------*/
 @media (max-width: 500px) {
+  .header {
+    height: 120vh;
+  }
   .header .nav-bar nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
   }
   .header .nav-bar nav a {
+    align-self: center;
     margin-top: 2rem;
   }
   .header .header-content {
-    margin-top: 35rem;
-    margin-left: 17vw;
+    margin-top: 45rem;
+    margin-left: 25vw;
   }
   footer {
     width: 100vw;

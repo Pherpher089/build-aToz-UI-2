@@ -1,5 +1,6 @@
 @import './variables';
 @import './mixins';
+@import 'Tabs/Tabs';
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900');
 
 
@@ -67,18 +68,25 @@ html{
     background-image: url('header-img.jpg'); 
     .nav-bar{
         //.dims(100%, 10rem);
+        background-color: @danger-red;
         .flex(space-between, center, row);
 
         img{
-            margin: 2rem;
+            margin: 1rem;
         }
         nav{
             .flex(space-around, center, row);
             text-decoration: none;
             font-size: 2rem;
             a{
+                text-decoration: none;
                 margin-left: @navBar-Margin;
                 margin-right: 1rem;
+                background-color:@danger-red;
+                color: white;
+                border: 1px solid white;
+                border-radius: @border-radius;
+                padding: 1rem;
 
             }
             a:last-Child{
@@ -88,32 +96,42 @@ html{
     }
 
     .header-content{
-        background-color: grey;
-        border: 2px solid rgb(200, 68, 68);
-        .dims(30rem, 40rem);
+        color: white;
+        background-color: @danger-red;
+        border-radius: @border-radius;
+        .dims(25rem, 30rem);
         .flex(space-around, center, column);
         margin-left: 17vw;
-        margin-top: 17rem;
-        button{
-            
-        }
-        
+        margin-top: 7vh;
 
         .tagline{
-            font-size: 5rem;
+            font-size: 4rem;
             text-align: center;
+        }
+
+        button{
+            width: 8rem;
+            background-color: white;
+            color: @danger-red;
+            border-radius: @border-radius;
+        }
+
+        p{
+            font-size: 1.5rem;
         }
     }
 }
 
 .about{
-    background-color:  rgb(200, 68, 68);
+    background-color: @danger-red;
+    color: white;
     margin-left: 12.5vw;
     
     .dims(75vw, auto);
     margin: 0 auto;
     margin-top: 3rem;
     border: auto;
+    border-radius: @border-radius;
     padding: 3rem;
 
     img{
@@ -129,42 +147,12 @@ html{
     }
 }
 
-.experiences{
-
-    background-color: skyBlue;
-    .dims(70vw, 40rem);
-    margin-left: 15vw;
-    margin-top: 3rem;
-    .flex(space-around, center, row);
-    .experience{
-        background-color: white;
-       
-        .dims(25em, 35rem);
-        h1{
-            margin-left: 1rem;
-            font-size: 2rem;
-        }
-        .img-placeHolder{
-            background-color: pink;
-            .dims(20rem, 15rem);
-            .margins(1rem, 1rem, 2rem, 2rem);
-        }
-        h3{
-            margin-left: 1rem;
-            font-size: 1.5rem;
-        }
-        p{
-            background-color: lightgrey;
-            font-size: 1.3rem;
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-            margin-top: 1rem;
-        }
-        
-        button{
-            .margins(3rem, 2rem, 6rem, 0rem);
-        }
-    }
+.section{
+    width: 85vw;
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-left: 7.5vw;
+    border: 2px solid @danger-red;
 }
 
 footer{
@@ -214,17 +202,14 @@ footer{
 
 //About us
     .aboutUs-header{
-       // background-color: limegreen;
-        .dims(100vw, 20rem);
-        background-image: url('AboutMe-HeaderImage.png');
+        .dims(100vw, 17rem);
+        background-color: @danger-red;
         .nav-bar{
-    
-
-            .dims(90vw, 15rem);
+            
             .flex(space-between, center , row);
     
             .logo{
-                margin: 0 auto;
+                margin: 1rem;
             }
     
             nav{
@@ -233,8 +218,14 @@ footer{
                 font-size: 2rem;
     
                 a{
+                    text-decoration: none;
                     margin-left: @navBar-Margin;
                     margin-right: 1rem;
+                    background-color:@danger-red;
+                    color: white;
+                    border: 1px solid white;
+                    border-radius: @border-radius;
+                    padding: 1rem;
     
                 }
                 a:last-Child{
@@ -250,7 +241,9 @@ footer{
         margin-top: 3rem;
     
         .bio{
-            background-color: lightgray;
+            background-color: rgb(236, 229, 229);
+            border: 3px solid @danger-red; 
+            border-radius: @border-radius;
             .dims(90vw, 25rem);
             .margins(3rem, 3rem, 5rem, 5rem);
             .flex(space-around, center, row);
@@ -260,28 +253,27 @@ footer{
             }
             .profile{
                 //background-color: limegreen;
-    
+                
                 h1{
-                    font-size: 2rem;
+                    font-size: 2.2rem;
                     text-align: center;
-                    margin-top:1rem;
+                    font-weight: bold;
                 }
             }
     
             .profile-content{
                 width: auto;
                 //padding: 1rem, 1rem, 1rem, 1rem;
-               // background-color: yellowgreen;
+                //background-color: yellowgreen;
                 h1{
                     font-size: 3rem;
                     font-weight: bold;
                     text-align: center;
-                    margin-top:1rem;        
                 }          
     
                 p{
+                    margin: 2rem;
                     font-size: 2rem;
-                    .margins(1rem, 1rem, 1rem, 1rem);
                     padding: 1rem, 1rem, 1rem, 1rem;
     
                 }
@@ -351,18 +343,20 @@ footer{
 @media(max-width:500px){
 
     .header{
+        height: 120vh;
         .nav-bar{
             nav{
+                .flex(space-around, center, column);
                 
-                .flex(space-between, center, column);
                 a{
+                    align-self: center;
                     margin-top: 2rem;
                 }
             }
         }
         .header-content{
-            margin-top: 35rem;
-            margin-left: 17vw;
+            margin-top: 45rem;
+            margin-left: 25vw;
         }
     }
 
