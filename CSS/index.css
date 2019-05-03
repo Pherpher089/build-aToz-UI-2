@@ -361,19 +361,17 @@ footer .copyright {
 }
 .aboutUs-header {
   width: 100vw;
-  height: 20rem;
-  background-image: url('AboutMe-HeaderImage.png');
+  height: 17rem;
+  background-color: #dc3545;
 }
 .aboutUs-header .nav-bar {
-  width: 90vw;
-  height: 15rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
 .aboutUs-header .nav-bar .logo {
-  margin: 0 auto;
+  margin: 1rem;
 }
 .aboutUs-header .nav-bar nav {
   display: flex;
@@ -384,8 +382,14 @@ footer .copyright {
   font-size: 2rem;
 }
 .aboutUs-header .nav-bar nav a {
+  text-decoration: none;
   margin-left: 2rem;
   margin-right: 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 1rem;
 }
 .aboutUs-header .nav-bar nav a:last-Child {
   margin-right: 3rem;
@@ -394,7 +398,9 @@ footer .copyright {
   margin-top: 3rem;
 }
 .aboutUs-content .bio {
-  background-color: lightgray;
+  background-color: #ece5e5;
+  border: 3px solid #dc3545;
+  border-radius: 8px;
   width: 90vw;
   height: 25rem;
   margin-top: 3rem;
@@ -410,9 +416,9 @@ footer .copyright {
   margin: 2rem;
 }
 .aboutUs-content .bio .profile h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
-  margin-top: 1rem;
+  font-weight: bold;
 }
 .aboutUs-content .bio .profile-content {
   width: auto;
@@ -421,14 +427,10 @@ footer .copyright {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 1rem;
 }
 .aboutUs-content .bio .profile-content p {
+  margin: 2rem;
   font-size: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
   padding: 1rem, 1rem, 1rem, 1rem;
 }
 .aboutUs-content .revers {

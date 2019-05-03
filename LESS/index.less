@@ -202,17 +202,14 @@ footer{
 
 //About us
     .aboutUs-header{
-       // background-color: limegreen;
-        .dims(100vw, 20rem);
-        background-image: url('AboutMe-HeaderImage.png');
+        .dims(100vw, 17rem);
+        background-color: @danger-red;
         .nav-bar{
-    
-
-            .dims(90vw, 15rem);
+            
             .flex(space-between, center , row);
     
             .logo{
-                margin: 0 auto;
+                margin: 1rem;
             }
     
             nav{
@@ -221,8 +218,14 @@ footer{
                 font-size: 2rem;
     
                 a{
+                    text-decoration: none;
                     margin-left: @navBar-Margin;
                     margin-right: 1rem;
+                    background-color:@danger-red;
+                    color: white;
+                    border: 1px solid white;
+                    border-radius: @border-radius;
+                    padding: 1rem;
     
                 }
                 a:last-Child{
@@ -238,7 +241,9 @@ footer{
         margin-top: 3rem;
     
         .bio{
-            background-color: lightgray;
+            background-color: rgb(236, 229, 229);
+            border: 3px solid @danger-red; 
+            border-radius: @border-radius;
             .dims(90vw, 25rem);
             .margins(3rem, 3rem, 5rem, 5rem);
             .flex(space-around, center, row);
@@ -248,28 +253,27 @@ footer{
             }
             .profile{
                 //background-color: limegreen;
-    
+                
                 h1{
-                    font-size: 2rem;
+                    font-size: 2.2rem;
                     text-align: center;
-                    margin-top:1rem;
+                    font-weight: bold;
                 }
             }
     
             .profile-content{
                 width: auto;
                 //padding: 1rem, 1rem, 1rem, 1rem;
-               // background-color: yellowgreen;
+                //background-color: yellowgreen;
                 h1{
                     font-size: 3rem;
                     font-weight: bold;
                     text-align: center;
-                    margin-top:1rem;        
                 }          
     
                 p{
+                    margin: 2rem;
                     font-size: 2rem;
-                    .margins(1rem, 1rem, 1rem, 1rem);
                     padding: 1rem, 1rem, 1rem, 1rem;
     
                 }
