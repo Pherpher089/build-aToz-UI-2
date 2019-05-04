@@ -62,22 +62,25 @@ html{
 .container{
     width: 99vw;
 }
+
 .header{
     height: 100vh;
     width:99vw;
     background-image: url('header-img.jpg'); 
+
     .nav-bar{
-        //.dims(100%, 10rem);
         background-color: @danger-red;
         .flex(space-between, center, row);
 
         img{
             margin: 1rem;
         }
+
         nav{
-            .flex(space-around, center, row);
             text-decoration: none;
             font-size: 2rem;
+            .flex(space-around, center, row);
+
             a{
                 text-decoration: none;
                 margin-left: @navBar-Margin;
@@ -202,7 +205,9 @@ footer{
 
 //About us
     .aboutUs-header{
-        .dims(100vw, 17rem);
+        width: auto;
+
+        height: 17rem;
         background-color: @danger-red;
         .nav-bar{
             
@@ -294,6 +299,7 @@ footer{
         .nav-bar{
             .dims(100%, 10rem);
             .flex(space-between, center, column);
+
             nav{
                 .flex(space-around, center, row);
                 .dims()
@@ -301,7 +307,6 @@ footer{
         }
 
         .header-content{
-
             margin-top: 30rem;
             margin-left: 30vw;
         }
@@ -311,13 +316,13 @@ footer{
         height: 50rem;
     }
 
-
-
     /*About Us (800p)x*/
     .aboutUs-header{
         .dims(99vw, 25rem);
+
         .nav-bar{
             .flex(space-between, center, column);
+
             .logo{
                 .margins(1rem, 1rem, 1rem, 1rem);
             }
@@ -332,9 +337,9 @@ footer{
     .aboutUs-content{
         .bio{
             .dims(90vw, 35rem);
+
             .profile-content{
                 .dims(90rem, 33rem);
-
             }
         }
     }
@@ -344,10 +349,11 @@ footer{
 
     .header{
         height: 120vh;
+
         .nav-bar{
             nav{
                 .flex(space-around, center, column);
-                
+            
                 a{
                     align-self: center;
                     margin-top: 2rem;
@@ -362,6 +368,7 @@ footer{
 
     footer{
         .dims(100vw, 35rem);
+
         .footer-content{
             .flex(space-between, center, column);
         }
@@ -370,16 +377,15 @@ footer{
     /*About Us (500px)*/
     .aboutUs-content{
         margin: 0 auto; 
+
         .bio{
             height: 50rem;
             margin: 0 auto; 
             margin-top: 3rem;
             .flex(space-between, center, column);
+            
             .profile-content{
                 width: auto;
-                p{
-
-                }
             }
         }
 
